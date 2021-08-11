@@ -62,7 +62,7 @@ function init() {
   .then(projectInfo => {
     const createFile = generatePage(projectInfo)
     //creating the readMe file
-    fs.writeFile('./ReadMe.MD',createFile, err=> {
+    fs.writeFile('./sampleReadMe.md',createFile, err=> {
       console.log('Success!! Page created!! :)')
     })
   })
